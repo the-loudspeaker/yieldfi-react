@@ -113,7 +113,7 @@ function App() {
                 style={{ marginRight: "8px", color: "white" }}
               />
             </div>
-            <Fab variant="extended">
+            <Box display="flex" alignItems="center">
               <IconButton
                 disabled={!account.isConnected}
                 onClick={handleChainDialogOpen}
@@ -137,7 +137,7 @@ function App() {
                     ? "Connecting"
                     : account.address}
               </Button>
-            </Fab>
+            </Box>
           </Toolbar>
         </AppBar>
         <Drawer
